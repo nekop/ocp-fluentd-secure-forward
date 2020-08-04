@@ -1,6 +1,6 @@
 # ocp-fluentd-secure-forward
 
-External fluentd secure forward server for OpenShift
+External fluentd secure forward server for OpenShift. This repo is not for production use.
 
 ```
 oc new-app https://github.com/nekop/ocp-fluentd-secure-forward --name=fluentd
