@@ -3,7 +3,6 @@ RUN dnf install rubygems ruby-devel gcc redhat-rpm-config make -y && dnf clean a
 RUN gem install fluentd fluent-plugin-secure-forward
 RUN mkdir -p /fluentd/conf
 RUN fluentd --setup /fluentd/conf
-COPY ./fluent.conf /fluentd/conf/fluent.conf
 RUN chmod -R 777 /fluentd
 WORKDIR /fluentd
 EXPOSE 24284
